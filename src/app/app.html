@@ -1,1 +1,47 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mainContent">
+  <ion-header color="orange">
+    <ion-toolbar>
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21" style="background-color:#ffffff;">
+    <div id="menu-container4">
+      <button id="menu-button15" ion-button color="white"  full icon-left style="color:#FF4000;text-align:left;" menuClose="" on-click="goToHeySeller()">
+        <ion-icon name="home"></ion-icon>
+        Home
+      </button>
+      <button id="menu-button16" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;" menuClose="" on-click="goToPreferences()">
+        <ion-icon name="settings"></ion-icon>
+        Account Settings
+      </button>
+      <button id="menu-button17" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;">
+        <ion-icon name="appstore"></ion-icon>
+        Markets
+      </button>
+      <button id="menu-button18" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;" href-inappbrowser="https://play.google.com/store/apps/details?id=com.i2c.mcp.paymalink&hl=fr_CA">
+        <ion-icon name="logo-usd"></ion-icon>
+        Paymalink
+      </button>
+      <button id="menu-button19" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;" menuClose="" on-click="goToContacts()">
+        <ion-icon name="contacts"></ion-icon>
+        Contacts
+      </button>
+      <button id="menu-button20" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;" menuClose="" on-click="goToCart()">
+        <ion-icon name="cart"></ion-icon>
+        Orders
+      </button>
+      <button id="menu-button1" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;">
+        <ion-icon name="help-circle"></ion-icon>
+        Help
+      </button>
+      <button id="menu-button24" ion-button color="white" full icon-left style="color:#FF4000;text-align:left;">
+        <ion-icon name="log-out"></ion-icon>
+        Logout
+      </button>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
