@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { CartPage } from '../cart/cart';
 
 @Component({
   selector: 'page-hey-seller',
@@ -8,6 +9,10 @@ import { NavController } from 'ionic-angular';
 export class HeySellerPage {
 
   constructor(public navCtrl: NavController) {
+  }
+
+  goToCart(params){
+    this.navCtrl.push(CartPage);
   }
   
 }
