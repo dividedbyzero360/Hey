@@ -15,7 +15,7 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.toolbar-background-ios
+.toolbar-background
 {
      background: #ff4000 !important
     //background: white;
@@ -25,7 +25,7 @@
     color:white
 }
 
-.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+.bar-button-default, .bar-button-default.bar-button, .bar-button-clear {
     color: white;
     background-color: transparent;
 }
