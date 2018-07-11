@@ -51,6 +51,22 @@ $colors: (
   orange: #FF4000
 );
 
+.tabs-md .tab-button {
+  color: #FF4000 !important;
+ }
+
+ .tabs-md .tab-button[aria-selected=true] {
+   color: #488aff !important;
+ }
+ .tab-button-icon
+ {
+  color: #FF4000 !important;
+ }
+
+ .tab-button-icon[ng-reflect-is-active=true]
+ {
+  color: #488aff !important;
+ }
 
 // App iOS Variables
 // --------------------------------------------------

@@ -45,5 +45,7 @@ export class MyApp {
   }goToCart(params){
     if (!params) params = {};
     this.navCtrl.setRoot(CartPage);
+  }goToLogOut(){
+    this.navCtrl.setRoot(HeySellerPage);
   }
 }
