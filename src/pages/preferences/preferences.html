@@ -8,24 +8,27 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page3">
-  <div id="preferences-container2">
+<ion-content padding id="page3"> 
     <div id="preferences-container3">
-      <ion-list id="preferences-list7">
+      <ion-list id="preferences-list7" style="margin:-1px 0px 5px;">
         <ion-item color="none" id="preferences-list-item2">
           <ion-avatar item-left>
-            <img src="assets/img/img_avatar.png"/>
+            <img src="assets/img/img_avatar.png" />
           </ion-avatar>
           <h2>
             Frank Charlie
           </h2>
+
         </ion-item>
       </ion-list>
-      <button id="preferences-button13" ion-button clear color="light" style="color:#FF4000;text-align:right;border-radius:3px 3px 3px 3px;" on-click="goToUpdateInformations()">
+      <div style="text-align:right;">
+      <button id="preferences-button13" ion-button clear align-right color="light" style="color:#FF4000;text-align:right;border-radius:3px 3px 3px 3px;"
+        on-click="goToUpdateInformations()">
         Edit
       </button>
     </div>
-  </div>
+    </div>
+  
   <form id="preferences-form5">
     <ion-item id="preferences-toggle1">
       <ion-label>
@@ -41,7 +44,8 @@
     </ion-item>
     <ion-item id="preferences-toggle2">
       <ion-label>
-        Allow people to follow your<br/> profile
+        Allow people to follow your
+        <br/> profile
       </ion-label>
       <ion-toggle color="balanced" checked="false"></ion-toggle>
     </ion-item>
