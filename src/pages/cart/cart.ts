@@ -29,13 +29,15 @@ export class CartPage {
   }
 
   decementCount(id:number): void{
-    if(id==1){
+   
+
+    if(id==1 && this.count1!=1){
       this.count1--;
     }
-    if(id==2){
+    if(id==2 && this.count2!=1){
       this.count2--;
     }
-    if(id==3){
+    if(id==3 && this.count3!=1){
       this.count3--;
     }
   }
