@@ -8,7 +8,7 @@ import { UpdateInformationsPage } from '../pages/update-informations/update-info
 import { ContactsPage } from '../pages/contacts/contacts';
 import { CartPage } from '../pages/cart/cart';
 
-
+import {TabsControllerPage} from '../pages/tabs-controller/tabs-controller';
 import { HeySellerPage } from '../pages/hey-seller/hey-seller';
 
 
@@ -18,7 +18,9 @@ import { HeySellerPage } from '../pages/hey-seller/hey-seller';
 })
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
-    rootPage:any = HeySellerPage;
+    //rootPage:any = HeySellerPage;
+    rootPage:any = TabsControllerPage;
+
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
